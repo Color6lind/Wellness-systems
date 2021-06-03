@@ -2,4 +2,4 @@
 
 Разработка сайта-визитки на React JS
 
-[Wellness systems](Wellnesssystems.ru)
+[Wellness systems](http://wellnesssystems.ru)
