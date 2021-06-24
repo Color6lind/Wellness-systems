@@ -1,11 +1,11 @@
 # Wellness-systems
-___
-###Сайта-визитка на React JS
 
-###`npm run build`
+### Сайта-визитка на React JS
+
+### `npm run build`
 Создаёт приложение для продакшена в папку сборки `dist`
 
-###`npm run dev`
+### `npm run dev`
 Запускает приложение в режиме разработки.<br/>
 Откройте [http://localhost:8080](http://localhost:8080), чтобы просмотреть его в браузере.
 
