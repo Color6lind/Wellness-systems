@@ -7,12 +7,15 @@ function LeftScrollbar({text, styles, up, down}) {
         <div className="scrollbar" style={styles}>
             <div>
                 <p className="scrollbar__text">{text}</p>
+
                 <span className="scrollbar__text__line"/>
             </div>
+
             <div className="scrollbar__navigation">
                 <a href={up} className="scrollTo">
                     <img src={arrowUp} alt="up"/>
                 </a>
+
                 <a href={down} className="scrollTo">
                     <img src={arrowDown} alt="down"/>
                 </a>

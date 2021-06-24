@@ -3,8 +3,10 @@ import LeftScrollbar from "../components/LeftScrollbar"
 
 import swimmingPool from "../assets/img/swimming_pool.jpg"
 import saunas from "../assets/img/saunas.jpg"
-import baths from "../assets/img/baths.jpg"
+import salt from "../assets/img/salt.jpg"
 import hamams from "../assets/img/hamams.jpg"
+import steel from "../assets/img/steel.jpg"
+import fountains from "../assets/img/fountains.jpg"
 
 const links = {
     up: "#section-about",
@@ -16,109 +18,58 @@ function Services() {
         <div id="section-services">
             <div className="container scrollbar-wrapper">
                 <LeftScrollbar text="03" up={links.up} down={links.down}/>
+
                 <div id="services">
-                    <div className="services-wrapper">
 
-                        <div
-                            className="services__block services__block__group1"
-                            id="services__block__1"
-                        >
-                            <div className="services__block__style" id="swimming-pool">
-                                <div id="swimming-pool__text-wrapper">
-                                    <p
-                                        className="services__block__text services__block__text-48 services__block__text__right"
-                                        id="swimming-pool__text"
-                                    >Бассейны</p>
-                                </div>
+                    <div className="services__block">
+                        <img src={swimmingPool} alt="swimming pool" id="services__img1"
+                             className="services__block__img"/>
 
-                                <img
-                                    src={swimmingPool}
-                                    alt="swimming pool"
-                                    id="swimming-pool__img"
-                                    className="services__block__img services__block__img__left"
-                                />
-                            </div>
+                        <p className="services__block__text"
+                           id="services__txt1">Бассейны</p>
+                    </div>
 
-                        </div>
+                    <div className="services__block text-right">
+                        <p className="services__block__text"
+                           id="services__txt2">Бассейны из нержавеющей стали</p>
 
-                        <div
-                            className="services__block services__block__group1"
-                            id="services__block__2"
-                        >
-                            <div className="services__block__style" id="saunas">
-                                <div id="saunas__text-wrapper">
-                                    <p
-                                        className="services__block__text services__block__text-48 services__block__text__left"
-                                        id="saunas__text"
-                                    >Сауны</p>
-                                </div>
+                        <img src={steel} alt="steel" id="services__img2"
+                             className="services__block__img"/>
+                    </div>
 
-                                <div id="white__block-1">
-                                    <p className="white__block__title">Проектирование и строительство </p>
-                                    <p className="white__block__p">Быстро и качественно</p>
-                                </div>
+                    <div className="services__block">
+                        <img src={saunas} alt="saunas" id="services__img3"
+                             className="services__block__img "/>
 
-                                <img
-                                    src={saunas}
-                                    alt="saunas"
-                                    id="saunas__img"
-                                    className="services__block__img services__block__img__right"
-                                />
-                            </div>
+                        <p className="services__block__text"
+                           id="services__txt3">Сауны</p>
+                    </div>
 
-                        </div>
+                    <div className="services__block text-right">
+                        <p className="services__block__text"
+                           id="services__txt4">Хаммамы</p>
 
-                        <div
-                            className="services__block services__block__group2"
-                            id="services__block__3"
-                        >
-                            <div className="services__block__style" id="baths">
-                                <div id="baths__text-wrapper">
-                                    <p
-                                        className="services__block__text services__block__text-64 services__block__text__right"
-                                        id="baths__text"
-                                    >Бани</p>
-                                </div>
+                        <img src={hamams} alt="hamams" id="services__img4"
+                             className="services__block__img"
+                        />
+                    </div>
 
-                                <img
-                                    src={baths}
-                                    alt="baths"
-                                    id="baths__img"
-                                    className="services__block__img services__block__img__left"
-                                />
-                            </div>
+                    <div className="services__block">
+                        <img src={fountains} alt="fountains" id="services__img5"
+                             className="services__block__img"
+                        />
 
-                        </div>
+                        <p className="services__block__text"
+                           id="services__txt5">Фонтаны</p>
+                    </div>
 
-                        <div
-                            className="services__block services__block__group2"
-                            id="services__block__4"
-                        >
-                            <div className="services__block__style" id="hamams">
-                                <div id="hamams__text-wrapper">
-                                    <p
-                                        className="services__block__text services__block__text-64 services__block__text__left"
-                                        id="hamams__text"
-                                    >Хамамы</p>
-                                </div>
+                    <div className="services__block text-right">
+                        <p className="services__block__text"
+                           id="services__txt6">Соляные комнаты</p>
 
-                                <div id="white__block-2">
-                                    <p className="white__block__title">Создаем любое наполнение аква-термального
-                                        комплекса</p>
-                                    <p className="white__block__p">любого вида и сложности “под ключ”</p>
-                                </div>
-
-                                <img
-                                    src={hamams}
-                                    alt="hamams"
-                                    id="hamams__img"
-                                    className="services__block__img services__block__img__right"
-                                />
-                            </div>
-                            <a href="/#" id="fullList">Полный список оказываемых нами услуг </a>
-
-                        </div>
-
+                        <img src={salt} alt="salt" id="services__img6"
+                             className="services__block__img"
+                        />
                     </div>
                 </div>
             </div>

@@ -6,6 +6,9 @@ const config = require('../config.json')
 const TOKEN = config.token
 const CHAT_ID = config.chatId
 
+$("#input__approval").click(function () {
+    $(this).toggleClass('checkbox-inp__checked')
+})
 
 function Form() {
     const {register, handleSubmit, control, reset} = useForm()
@@ -29,13 +32,12 @@ function Form() {
                 htmlFor="input__name"
                 className="label__field"
             >Имя</label>
+
             <input
                 id="input__name"
                 name="name"
                 placeholder="Укажите Ваше имя"
-                // value="И Иван Иванович"
                 {...register("name", {
-                    pattern: /^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/u,
                     required: true
                 })}
             />
@@ -44,11 +46,11 @@ function Form() {
                 htmlFor="input__phone"
                 className="label__field"
             >Телефон</label>
+
             <input
                 id="input__phone"
                 name="phone"
                 placeholder="Укажите телефон для связи"
-                // value="89345435454"
                 {...register("phone", {
                     pattern: /^((8|\+7)[`\- ]?)?(\(?\d{3}\)?[`\- ]?)?[\d\- ]{7,10}$/,
                     required: true
@@ -63,6 +65,7 @@ function Form() {
                     rules={{required: true}}
                     render={({field}) => <input type="checkbox" id="input__approval" {...field} />}
                 />
+
                 <label
                     htmlFor="input__approval"
                     id="label__checkbox"

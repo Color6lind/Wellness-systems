@@ -43,7 +43,8 @@ function FooterMap() {
             <div className="place-wrapper">
                 <div className="place__text">
                     <p className="footer--large" style={{marginBottom: "20px"}}>Ждём Вас</p>
-                    <p className="footer--small">Приезжайте к нам в офис для обсудения деталей</p>
+
+                    <p className="footer--small">Приезжайте к нам в офис для обсуждения деталей</p>
                 </div>
             </div>
 
